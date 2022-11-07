@@ -1,0 +1,22 @@
+Postman Home Work 2
+
+pm.test("Salary 1000", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.salary).to.eql(req.salary);
+});
+
+
+pm.test("Name are Zhenya", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.name).to.eql(req.name);
+});
+
+
+pm.test("Age is 35", function () {
+    var jsonData = pm.response.json();
+    pm.expect(jsonData.age).to.eql(req.age);
+});
+
+let req_salary = req.salary;
+let req_name = req.name
+let req_age = req.age
