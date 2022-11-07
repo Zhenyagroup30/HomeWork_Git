@@ -1,0 +1,99 @@
+Первая часть первого  ДЗ  ))
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я
+- pwd
+2) Создать папку
+- mkdir papka
+3) Зайти в папку
+- cd papka
+4) Создать 3 папки
+- mkdir folder_1 folder_2 folder_3
+5) Зайти в любую папку
+- cd folder_2
+6) Создать 5 файлов (3 txt, 2 json)
+- touch 1.txt 2.txt 3.txt 1.json 2.json
+7) Создать 3 папки
+- mkdir folder_1_1 folder_2_1 folder_3_1
+8. Вывести список содержимого папки
+- ls -la
+9) + Открыть любой txt файл
+- cat 1.txt
+10) + написать туда что-нибудь, любой текст.
+- cat >> 1.txt
+1. first string
+2. second string
+3. ThiRD STRINg
+
+11) + сохранить и выйти.
+- ctrl+c
+12) Выйти из папки на уровень выше
+— cd ..
+13) переместить любые 2 файла, которые вы создали, в любую другую папку.
+
+из текущей папки:
+- mv 1.json 1.txt folder_1_1
+
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку.
+
+из текущей папки:
+- cp 2.json 2.txt folder_1_1
+15) Найти файл по имени
+- find . -name "1.json"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает.
+- tail 1.txt
+17) вывести несколько первых строк из текстового файла
+- tail +10 1.txt
+18) вывести несколько последних строк из текстового файла
+- tail -10 1.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает.
+- less 1.txt
+"q" чтобы выйти
+20) вывести дату и время
+- date
+=========
+
+Задание *
+1) Отправить http запрос на сервер.
+http://162.55.220.72:5005/terminal-hw-request
+- curl "http://162.55.220.72:5005/terminal-hw-request"
+
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+для создания файла скрипта:
+
+nano Script.sh
+
+#!/bin/bash
+
+echo "This is my first script!"
+
+echo "Let's do something!"
+
+mkdir Script_Folder
+
+cd Script_Folder
+
+mkdir folder_1 folder_2 folder_3
+
+cd folder_2
+
+touch 1.txt 2.txt 3.txt 1.json 2.json
+
+mkdir folder_1_1 folder_2_1 folder_3_1
+
+ls -la
+
+echo "Well done!"
+
+mv 1.json 1.txt folder_1_1
+
+
+
+
+
+
+=====================
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir foldername
+3) Зайти в папку - cd foldername
